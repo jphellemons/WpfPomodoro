@@ -53,6 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -95,6 +99,17 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\wc3-peon-work-work.mp3" />
+    <Resource Include="img\tomato-icon.png" />
+    <Resource Include="img\tomato-icon.ico" />
+    <Resource Include="Sounds\ring.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <EmbeddedResource Include="Sounds\wc3-peon-work-work.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
